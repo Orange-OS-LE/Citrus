@@ -21,7 +21,7 @@ function createWindow() {
             webviewTag: true,
             devTools: true,
         },
-        title: "Catalyst",
+        title: "Citrus",
         icon: path.join(__dirname, "../assets/icon.png"),
     });
     // and load the index.html of the app.

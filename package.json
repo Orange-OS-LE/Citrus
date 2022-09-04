@@ -1,5 +1,5 @@
 {
-    "name": "catalyst",
+    "name": "citrus",
     "version": "3.1.6",
     "description": "A minimal Electron Web Browser",
     "main": "main/main.js",
@@ -13,13 +13,13 @@
         "publish": "electron-forge publish",
         "make": "electron-forge make"
     },
-    "repository": "https://github.com/JaydenDev/Catalyst",
+    "repository": "https://github.com/Orange-OS-LE/Citrus",
     "keywords": [
         "Electron",
         "Browser",
         "Internet"
     ],
-    "author": "JaydenDev",
+    "author": "OrangeOS Team",
     "license": "MIT",
     "devDependencies": {
         "@electron-forge/cli": "^6.0.0-beta.65",
