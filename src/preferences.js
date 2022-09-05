@@ -12,8 +12,6 @@ function togglePreferences() {
         // run preferences
         evaluatePreferences();
         // update fields in preferences
-        document.getElementById("pref-darkmode").checked = preferences.dark;
-        addCheckboxListener(document.getElementById("pref-darkmode"), "dark");
         document.getElementById("pref-autocomplete").checked = preferences.autocomplete;
         addCheckboxListener(document.getElementById("pref-autocomplete"), "autocomplete");
         document.getElementById("pref-bookmarks").checked = preferences.bookmarks;
