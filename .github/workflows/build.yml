@@ -1,5 +1,5 @@
 # taken from https://dev.to/abulka/comment/1dh3k thanks!
-name: Release Catalyst
+name: Release Citrus
 on:
   push:
     tags:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
     steps:
 
       - uses: actions/checkout@v2
@@ -24,8 +24,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run publish
-      - name: Apple Silicon
-        if: ${{ matrix.os == 'macos-latest' }}
-        run: npm run publish -- --arch=arm64
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
