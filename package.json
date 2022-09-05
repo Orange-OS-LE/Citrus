@@ -32,7 +32,7 @@
     },
     "dependencies": {
         "@cliqz/adblocker-electron": "^1.23.8",
-        "cross-fetch": "^3.1.5",
+        "cross-fetch": "^3.1.5"
     },
     "config": {
         "forge": {
